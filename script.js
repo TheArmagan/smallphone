@@ -24,7 +24,8 @@ filePicker.addEventListener("change", async (ev) => {
 
 const templates = {
   "smallphone": [251, 390, 306, 405],
-  "canvas": [286, 427, 691, 489]
+  "canvas": [286, 427, 691, 489],
+  "btkpc": [173, 52, 514, 477]
 }
 
 let templatesSelect = document.querySelector(".templates");
