@@ -25,7 +25,8 @@ filePicker.addEventListener("change", async (ev) => {
 const templates = {
   "smallphone": [251, 390, 306, 405],
   "canvas": [286, 427, 691, 489],
-  "btkpc": [173, 52, 514, 477]
+  "btkpc": [173, 52, 514, 477],
+  "nycbillboard": [287, 52, 737, 676]
 }
 
 let templatesSelect = document.querySelector(".templates");
@@ -49,7 +50,7 @@ document.querySelector(".select-image")
 document.querySelector(".download-image")
   .addEventListener("click", async () => {
     let blob = await getCanvasBlob(canvas);
-    saveAs(blob, `smallphone-${Date.now()}.png`);
+    saveAs(blob, `armagan.rest-${selectedTemplate}-${Date.now()}.png`);
   })
 
 async function draw() {
